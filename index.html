@@ -36,16 +36,37 @@
             <h3>Поиск гостинницы в Седоне</h3>
 
             <form class="hotel-search" method="post" action=""> <!-- не совсем понял, что должно быть в action: информация должна идти на сервер, тогда какой у меня сервер-->
-              <p>
+              <div>
                 <label for="date-income">Дата заезда:</label>
-                <input id="date-income" type="text" name="date-income">
-              </p>
-              <p>
+                <div>
+                  <input id="date-income" type="text" name="date-income" value="24 апреля 2017">
+                  <button type="button"><img src="img/calendar.png"></button>
+                </div>
+              </div>
+              <div>
                 <label for="date-outcome">Дата выезда:</label>
-                <input id="date-outcome" type="text" name="date-outcome">
-              </p>
-              <!-- Взрослые и дети -->
-              <a href="hotels.html">Найти</a>
+                <div>
+                  <input id="date-outcome" type="text" name="date-outcome" value="4 июля 2017">
+                  <button type="button"><img src="img/calendar.png"></button>
+                </div>
+              </div>
+              <div>
+                <label for="adults">Взрослые</label>
+                <div>
+                  <button type="button"><img src="img/minus.png"></button>
+                  <input id="adults" type="text" name="adults" value="2">
+                  <button type="button"><img src="img/plus.png"></button>
+                </div>
+              </div>
+              <div>
+                <label for="child">Дети</label>
+                <div>
+                  <button type="button"><img src="img/minus.png"></button>
+                  <input id="child" type="text" name="child" value="0">
+                  <button type="button"><img src="img/plus.png"></button>
+                </div>
+              </div>
+              <button type="button">Найти</button>
             </form>
             
           </section>
