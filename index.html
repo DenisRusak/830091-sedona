@@ -33,11 +33,21 @@
           <h2>Заинтересовались?</h2>
           <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
           <section class="hotel-search">
-            <p>Поиск гостинницы в Седоне</p>
+            <h3>Поиск гостинницы в Седоне</h3>
 
+            <form class="hotel-search" method="post" action=""> <!-- не совсем понял, что должно быть в action: информация должна идти на сервер, тогда какой у меня сервер-->
+              <p>
+                <label for="date-income">Дата заезда:</label>
+                <input id="date-income" type="text" name="date-income">
+              </p>
+              <p>
+                <label for="date-outcome">Дата выезда:</label>
+                <input id="date-outcome" type="text" name="date-outcome">
+              </p>
+              <!-- Взрослые и дети -->
+              <a href="hotels.html">Найти</a>
+            </form>
             
-            <!-- Тут будет форма ввода данных для поиска -->
-            <a class="button find" href="hotels.html">Найти</a>
           </section>
         </section>
         <footer>
@@ -59,7 +69,7 @@
           <p class="footer-right">
             website by
             <a href="htmlacademy.ru">
-                <img src="img/htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
             </a>
           </p>
         </footer>
