@@ -11,7 +11,7 @@
       <header class="header">
         <a><img src="img/index-logo.png" width="140" height="71" alt="Логотип Седона"></a>
         <ul class="nav">
-          <li><a href="info.html" tabindex="2">Информация</a></li>
+          <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
@@ -28,66 +28,70 @@
         </section>
       
         <!-- Тут вроде должны быть визуализированы 5 причин -->
-        
-        <section class="search-block">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
-          <section class="hotel-search">
-            <h3>Поиск гостинницы в Седоне</h3>
 
-            <form class="hotel-search" method="post" action=""> <!-- не совсем понял, что должно быть в action: информация должна идти на сервер, тогда какой у меня сервер-->
-              <div>
-                <label for="date-income">Дата заезда:</label>
-                <div>
-                  <input id="date-income" type="text" name="date-income" value="24 апреля 2017">
-                  <button type="button">
-                    <img src="img/calendar.png">
-                    <p class="visually-hidden">Выбрать дату</p>
-                  </button>
-                </div>
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне</p>
+        <section class="hotel-search">
+
+          <p class="find-hotel"><a href="hotels.html">Поиск гостинницы в Седоне</a></p>
+
+          <form class="hotel-search" method="post" action=""> <!-- не совсем понял, что должно быть в action: информация должна идти на сервер, тогда какой у меня сервер-->
+
+            <div class="block-search">
+              <label for="date-income">Дата заезда:</label>
+              <div class="block-search-item">
+                <input id="date-income" type="text" name="date-income" value="24 апреля 2017">
+                <button class="button" type="button">
+                  <img src="img/calendar.svg">
+                  <p class="visually-hidden">Выбрать дату</p>
+                </button>
               </div>
-              <div>
-                <label for="date-outcome">Дата выезда:</label>
-                <div>
-                  <input id="date-outcome" type="text" name="date-outcome" value="4 июля 2017">
-                  <button type="button">
-                    <img src="img/calendar.png">
-                    <p class="visually-hidden">Выбрать дату</p>
-                  </button>
-                </div>
+            </div>
+
+            <div class="block-search">
+              <label for="date-outcome">Дата выезда:</label>
+              <div class="block-search-item">
+                <input id="date-outcome" type="text" name="date-outcome" value="4 июля 2017">
+                <button class="button" type="button">
+                  <img src="img/calendar.svg">
+                  <p class="visually-hidden">Выбрать дату</p>
+                </button>
               </div>
-              <div>
-                <label for="adults">Взрослые</label>
-                <div>
-                  <button type="button">
-                    <img src="img/minus.png">
-                    <p class="visually-hidden">Убрать</p>
-                  </button>
-                  <input id="adults" type="text" name="adults" value="2">
-                  <button type="button">
-                    <img src="img/plus.png">
-                    <p class="visually-hidden">Добавить</p>
-                  </button>
-                </div>
+            </div>
+
+            <div class="block-search">
+              <label for="adults">Взрослые</label>
+              <div class="block-search-item">
+                <button class="button" type="button">
+                  <img src="img/minus.png">
+                  <p class="visually-hidden">Убрать</p>
+                </button>
+                <input id="adults" type="text" name="adults" value="2">
+                <button class="button" type="button">
+                  <img src="img/plus.png">
+                  <p class="visually-hidden">Добавить</p>
+                </button>
               </div>
-              <div>
-                <label for="child">Дети</label>
-                <div>
-                  <button type="button">
-                    <img src="img/minus.png">
-                    <p class="visually-hidden">Убрать</p>
-                  </button>
-                  <input id="child" type="text" name="child" value="0">
-                  <button type="button">
-                    <img src="img/plus.png">
-                    <p class="visually-hidden">Добавить</p
-                      ></button>
-                </div>
+            </div>
+
+            <div class="block-search">
+              <label for="child">Дети</label>
+              <div class="block-search-item">
+                <button class="button" type="button">
+                  <img src="img/minus.png">
+                  <p class="visually-hidden">Убрать</p>
+                </button>
+                <input id="child" type="text" name="child" value="0">
+                <button class="button" type="button">
+                  <img src="img/plus.png">
+                  <p class="visually-hidden">Добавить</p>
+                </button>
               </div>
-              <button type="submit">Найти</button>
-            </form>
+            </div>
+
+            <button class="button-find" type="submit">Найти</button>
+          </form>
             
-          </section>
         </section>
         <footer>
           <p>#visitsedona</p>
