@@ -196,3 +196,11 @@ a {
 
     background-color: #766357;
 }
+
+.calendar:hover {
+    fill: #000000;
+}
+
+.calendar g path:active {
+    fill: #81b3d2;
+}
