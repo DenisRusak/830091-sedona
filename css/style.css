@@ -332,3 +332,13 @@ input[type="radio"].visually-hidden {
     width: 115px;
 }   
 
+.catalog-item {
+    display: flex;
+}
+
+.right-info {
+    margin-left: auto;
+    width: 110px;
+    margin-right: 73px;
+    padding-top: 29px;
+}
