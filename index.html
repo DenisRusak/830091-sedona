@@ -7,131 +7,204 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <section class="container">
+    <section class="wrapper">
 
       <header class="header">
+        <div class="indexlogo">
+          <a href="index.html"><img src="img/index-logo.png" width="140" height="71" alt="Логотип Седона"></a>
+        </div>
         <ul class="nav">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и видео</a></li>
-          <a href="index.html"><img src="img/index-logo.png" width="140" height="71" alt="Логотип Седона"></a>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
       </header>
       
-      <main>
-        <div class="promo-block">
-          <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
-          <img src="img/polygon.jpg" width="1200" height="773" alt="Нижний спецефект">
+      <div class="promo-block">
+        <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
+        <div class="index-picture">
+          <img src="img/welcome-sedona.png" width="459" height="353" alt="Welcome Sedona">
         </div>
-        <div class="description">
-          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      </div>
+
+
+      <div class="description">
+        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      </div>
+    
+      <!--Причины-->
+      <article class="reasons">
+        <!--Первая строка-->
+        <div class="reason-row-up">
+          <div class="items-reason-row">
+            <h3>Настоящий городок</h3>
+            <span>№1</span>
+            <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+          </div>
+          <span class="true-town">
+            <img src="img/true-town.jpg" width="800" height="256" alt="Настоящий гороок">
+          </span>
         </div>
-      
-        <!-- Тут вроде должны быть визуализированы 5 причин -->
-
-        <div class="search">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинниц в Седоне</p>
-          <div class="hotel-search">
-
-            <p class="find-hotel"><a href="hotels.html">Поиск гостинницы в Седоне</a></p>
-
-            <form class="hotel-search" method="post" action=""> <!-- не совсем понял, что должно быть в action: информация должна идти на сервер, тогда какой у меня сервер-->
-
-              <div class="block-search1">
-                <label for="date-income">Дата заезда:</label>
-                <input id="date-income" type="text" name="date-income" value="24 апреля 2017">
-                <button class="button" type="button">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" class="calendar">
-                  <g id="calendar_1_">
-                    <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
-                      c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
-                      c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
-                      C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
-                      c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
-                      c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
-                      v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
-                    <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
-                    <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
-                    <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
-                    <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
-                    <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
-                    <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
-                    <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
-                    <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
-                    <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
-                  </g>
-                  </svg>
-                  <p class="visually-hidden">Выбрать дату</p>
-                </button>
-              </div>
-
-              <div class="block-search2">
-                <label for="date-outcome">Дата выезда:</label>
-                <input id="date-outcome" type="text" name="date-outcome" value="4 июля 2017">
-                <button class="button" type="button">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" class="calendar">
-                  <g id="calendar_1_">
-                    <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
-                      c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
-                      c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
-                      C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
-                      c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
-                      c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
-                      v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
-                    <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
-                    <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
-                    <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
-                    <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
-                    <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
-                    <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
-                    <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
-                    <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
-                    <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
-                  </g>
-                  </svg>
-                  <p class="visually-hidden">Выбрать дату</p>
-                </button>
-              </div>
-
-              <div class="block-search3">
-                <label for="adults">Взрослые:</label>
-                <div class="block-search-item">
-                  <button class="button-symbol" type="button">
-                    <img src="img/minus.png">
-                    <p class="visually-hidden">Убрать</p>
-                  </button>
-                  <input class="inlet" id="adults" type="text" name="adults" value="2">
-                  <button class="button-symbol" type="button">
-                    <img src="img/plus.png">
-                    <p class="visually-hidden">Добавить</p>
-                  </button>
-                </div>
-
-                <label for="child">Дети:</label>
-                <div class="block-search-item">
-                  <button class="button-symbol" type="button">
-                    <img src="img/minus.png">
-                    <p class="visually-hidden">Убрать</p>
-                  </button>
-                  <input class="inlet" id="child" type="text" name="child" value="0">
-                  <button class="button-symbol" type="button">
-                    <img src="img/plus.png">
-                    <p class="visually-hidden">Добавить</p>
-                  </button>
-                </div>
-              </div>
-
-              <button class="button-find" type="submit">Найти</button>
-            </form>
-              
+        <!--Вторая строка-->
+        <div class="reason-picture">
+          <div class="life">
+            <img src="img/home.svg" alt="Жилье">
+            <h3>Жилье</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </div>
+          <div class="food">
+            <img src="img/food.svg" alt="Еда">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="presents">
+            <img src="img/presents.svg" alt="Сувениры">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-      </main>
+        <!--Третья строка-->
+        <div class="reason-row-down">
+          <span class="devil-bridge">
+            <img src="img/devil-bridge.jpg" width="800" height="256" alt="Настоящий гороок">
+          </span>
+          <div class="items-reason-row">
+            <h3>Там есть<br>мост дьявола</h3>
+            <span>№2</span>
+            <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
+          </div>
+        </div>
+        <!--Четвертая строка-->
+        <div class="reason-numbers">
+          <div class="small-area">
+            <h3>Небольшая площадь</h3>
+            <span>№3</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="nice-road">
+            <h3>Красивая дорога</h3>
+            <span>№4</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="few-tourists">
+            <h3>Мало туристов</h3>
+            <span>№5</span>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="search">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинниц в Седоне</p>
+        <div class="hotel-search">
+
+          <a href="form-hotels.html">Поиск гостинницы в Седоне</a>
+
+          <form class="hotel-search" action="" method="post">
+
+            <div class="block-search-first-line">
+              <label for="date-income">Дата заезда:</label>
+              <div class="container-input">
+                <input id="date-income" type="text" name="date-income" value="24 апреля 2017">
+              </div>
+              <button class="button" type="button">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" class="calendar">
+                <g id="calendar_1_">
+                  <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+                    c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+                    c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+                    C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+                    c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+                    c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+                    v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                  <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+                  <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+                  <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+                  <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+                  <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+                  <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+                  <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+                  <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+                  <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+                </g>
+                </svg>
+                <p class="visually-hidden">Выбрать дату</p>
+              </button>
+            </div>
+
+            <div class="block-search-second-line">
+              <label for="date-outcome">Дата выезда:</label>
+              <div class="container-input">
+                <input id="date-outcome" type="text" name="date-outcome" value="4 июля 2017">
+              </div>
+              <button class="button" type="button">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" class="calendar">
+                <g id="calendar_1_">
+                  <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+                    c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
+                    c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
+                    C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
+                    c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
+                    c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
+                    v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z"/>
+                  <rect x="4.594" y="8.225" width="2.625" height="2.066"/>
+                  <rect x="4.594" y="11.668" width="2.625" height="2.067"/>
+                  <rect x="4.594" y="15.112" width="2.625" height="2.066"/>
+                  <rect x="9.188" y="15.112" width="2.625" height="2.066"/>
+                  <rect x="9.188" y="11.668" width="2.625" height="2.067"/>
+                  <rect x="9.188" y="8.225" width="2.625" height="2.066"/>
+                  <rect x="13.781" y="15.112" width="2.625" height="2.066"/>
+                  <rect x="13.781" y="11.668" width="2.625" height="2.067"/>
+                  <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
+                </g>
+                </svg>
+                <p class="visually-hidden">Выбрать дату</p>
+              </button>
+            </div>
+
+            <div class="block-search-third-line">
+              <label for="adults">Взрослые:</label>
+              <div class="block-search-item">
+                <button class="button-symbol" type="button">
+                  <svg></svg>
+                  <p class="visually-hidden">Убрать</p>
+                </button>
+                <div class="container-input">
+                  <input class="inlet" id="adults" type="text" name="adults" value="2">
+                </div>
+                <button class="button-symbol" type="button">
+                  <img src="img/plus.png">
+                  <p class="visually-hidden">Добавить</p>
+                </button>
+              </div>
+
+              <label for="child">Дети:</label>
+              <div class="block-search-item">
+                <button class="button-symbol" type="button">
+                  <img src="img/minus.png">
+                  <p class="visually-hidden">Убрать</p>
+                </button>
+                <div class="container-input">
+                  <input class="inlet" id="child" type="text" name="child" value="0">
+                </div>
+                <button class="button-symbol" type="button">
+                  <img src="img/plus.png">
+                  <p class="visually-hidden">Добавить</p>
+                </button>
+              </div>
+            </div>
+
+            <button class="button-find" type="submit">Найти</button>
+          </form>
+            
+        </div>
+      </div>
+
       <footer class="footer">
         <div class="footer-container">
           <p class="footer-visitsedona">#visitsedona</p>
@@ -149,7 +222,7 @@
               <p class="visually-hidden">Ютуб</p>
             </a></li>
           </ul>
-          <p class="footer-right">website by</p>
+          <p class="footer-website">website by</p>
           <a class="footer-htmllogo" href="htmlacademy.ru">
               <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
           </a>

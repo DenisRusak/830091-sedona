@@ -19,18 +19,25 @@ a {
     font-size: 14px;
     line-height: 26px;
     color: #000000;
+    width: 1200px;
+    margin-left: 40px;
 
     background-color: #ffffff;
 }
 
+.index-picture {
+    padding-top: 76px;
+    margin-left: 370px;
+    margin-top: 76px;
+}
+
 .nav,
 .social-buttons,
-.catalog {
+.catalog-list {
     list-style: none;
 }
 
-.nav a,
-.mid-info h3 a {
+.nav a {
     color: #000000;
 }
 
@@ -53,7 +60,9 @@ a {
 }
 
 .description {
+    width: 489px;
     line-height: 26px;
+    margin-left: 395px;;
     font-weight: normal;
     text-align: center;
     color: #333333;
@@ -168,7 +177,6 @@ a {
 .name-hotel {
     font-size: 21px;
     line-height: 26px;
-    text-align: left;
     color: #000000;
 }
 
@@ -184,6 +192,7 @@ a {
     line-height: 21px;
     text-align: left;
     color: #ffffff;
+    width: 110px;
 
     background-color: #81b3d2;
 }
@@ -208,7 +217,10 @@ a {
     fill: #81b3d2;
 }
 
-.catalog {
+.catalog-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
     background: #ffffff;
 }
 
@@ -217,9 +229,11 @@ a {
 
 /*стили сетки*/
 
-.container {
-    margin-left: 40px;
-    margin-right: 40px;
+.wrapper {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(130, 230, 205);
 }
 
 .nav {
@@ -233,8 +247,22 @@ a {
 }
 
 .promo-block {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    width: 1200px;
+    height: 509px;
+    margin-left: 40px;
+    background: url(../img/index-background.jpg);
+}
+
+.promo-block:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(../img/polygon-no.png);
+    background-size: cover;
+    width: 1201px;
+    height: 59px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -269,19 +297,19 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
-.block-search1 {
+.block-search-first-line {
     display: flex;
     width: 568px;
     justify-content: center;
 }
 
-.block-search2 {
+.block-search-second-line {
     display: flex;
     width: 568px;
     justify-content: center;
 }
 
-.block-search3 {
+.block-search-third-line {
     display: flex;
     justify-content: center;
 }
@@ -297,11 +325,12 @@ input[type="radio"].visually-hidden {
 }
 
 .footer {
-    background-color: #ffffff;
-    min-height: 120px;
-    padding-top: 36px;
+    background-color: rgb(245, 235, 92);
+    padding-top: 33px;
     padding-left: 132px;
-    padding-right: 110px;
+    padding-right: 101px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .footer-container {
@@ -321,7 +350,7 @@ input[type="radio"].visually-hidden {
     width: 150px;
 }
 
-.footer-right {
+.footer-website {
     margin: 0;
     width: 78px;
     margin-left: auto;
@@ -333,7 +362,12 @@ input[type="radio"].visually-hidden {
 }   
 
 .catalog-item {
+    border-top: 1px solid rgb(182, 182, 182);
     display: flex;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgb(182, 182, 182);
 }
 
 .right-info {
@@ -342,3 +376,338 @@ input[type="radio"].visually-hidden {
     margin-right: 73px;
     padding-top: 29px;
 }
+
+.indexlogo {
+    position: absolute;
+    left: 50%;
+    margin-right: auto;
+    margin-left: -69px;
+}
+
+.reasons {
+    width: 1200px;
+    margin-left: 40px;
+}
+
+.reason-row-up,
+.reason-row-down {
+    width: 1200px;
+
+    display: flex;
+    align-items: center;
+}
+
+.items-reason-row {
+    width: 400px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #81b3d2;
+    padding-top: 43px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 57px; 
+}
+
+.items-reason-row h3 {
+    font-size: 21px;
+    line-height: 21px;
+    width: 166px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.items-reason-row span,
+.items-reason-row p {
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.true-town,
+.devil-bridge {
+    width: 800px;
+    height: 256px;
+}
+
+.reason-picture,
+.reason-numbers {
+    width: 1200px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.reason-numbers {
+    background-color: #eeeeee;
+}
+
+.life,
+.food,
+.presents {
+    width: 400px;
+}
+
+.life img,
+.food img,
+.presents img {
+    padding-top: 60px;
+}
+
+.life h3,
+.food h3,
+.presents h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.life p,
+.food p,
+.presents p {
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.life p {
+    width: 252px;
+    padding-left: 73px;
+    padding-bottom: 80px;
+}
+
+.food p {
+    width: 284px;
+    padding-left: 58px;
+    padding-bottom: 80px;
+}
+
+.presents p {
+    width: 273px;
+    padding-left: 64px;
+    padding-bottom: 80px;
+}
+
+.small-area,
+.nice-road,
+.few-tourists {
+    width: 400px;
+    text-align: center;
+}
+
+.small-area h3,
+.nice-road h3,
+.few-tourists h3 {
+    font-size: 21px;
+    line-height: 21px;
+    padding-top: 30px;
+}
+
+.small-area span,
+.nice-road span,
+.few-tourists span,
+.small-area p,
+.nice-road p,
+.few-tourists p {
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.small-area h3 {
+    width: 163px;
+    padding-left: 117px;
+}
+
+.nice-road h3 {
+    width: 163px;
+    padding-left: 116px;
+}
+
+.few-tourists h3 {
+    width: 146px;
+    padding-left: 126px;
+}
+
+.small-area p {
+    width: 208px;
+    padding-left: 95px;
+    padding-bottom: 60px;
+}
+
+.nice-road p {
+    width: 262px;
+    padding-left: 69px;
+    padding-bottom: 60px;
+}
+
+.few-tourists p {
+    width: 246px;
+    padding-left: 77px;
+    padding-bottom: 60px;
+}
+
+.catalog {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.catalog-photo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 72px;
+}
+
+.name-price {
+    display: flex;
+}
+
+.filter {
+    width: 1200px;
+    height: 217px;
+    background-image: url(../img/filter-hotels.jpg);
+
+    margin-top: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.filter-block {
+    width: 1056px;
+    height: 155px;
+    background-color: rgb(245, 201, 106);
+
+    margin-left: 72px;
+}
+
+.filter-range {
+    width: 330px;
+  
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .filter-range-title {
+    margin-bottom: 9px;
+  
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+  .price-controls {
+    position: relative;
+    
+    height: 36px;
+    margin-bottom: 20px;
+  
+    font-size: 0;
+  
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  
+    width: 2px;
+    height: 22px;
+  
+    background: #ffffff;
+    transform: translate(-50%, -50%);
+  }
+  
+  .price-controls label {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+  
+    cursor: pointer;
+  }
+  
+  .price-controls .min-price,
+  .price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+  }
+  
+  .price-controls input {
+    width: 50px;
+    margin: 0;
+  
+    color: inherit;
+    font: inherit;
+  
+    background: none;
+    border: none;
+  }
+  
+  .range-controls {
+    position: relative;
+  
+    margin-bottom: 32px;
+  }
+  
+  .range-controls .scale {
+    height: 2px;
+  
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .range-controls .bar {
+    width: 80%;
+    height: 2px;
+  
+    background: #ffffff;
+  }
+  
+  .range-toggle {
+    position: absolute;
+    top: -9px;
+  
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+  }
+  
+  .range-toggle:hover {
+    background: #1c4f80;
+  }
+  
+  .range-toggle-min {
+    left: 0;
+  }
+  
+  .range-toggle-max {
+    left: 80%;
+  }
+  
+  .btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+  
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+  
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  
+  .btn-transparent:hover {
+    color: #000000;
+  
+    background: #ffffff;
+  }
