@@ -560,7 +560,7 @@ input[type="radio"].visually-hidden {
     display: flex;
 }
 
-.filter {
+.background-picture {
     width: 1200px;
     height: 217px;
     background-image: url(../img/filter-hotels.jpg);
@@ -570,30 +570,99 @@ input[type="radio"].visually-hidden {
     margin-right: 40px;
 }
 
-.filter-block {
-    width: 1056px;
-    height: 155px;
-    background-color: rgb(245, 201, 106);
+.filter {
 
-    margin-left: 72px;
+    display: flex;
+}
+
+.filter fieldset {
+    border: none;
+    color: #ffffff;
+    
+    padding: 0;
+    margin: 0;
+    margin-bottom: 22px;
+    padding-left: 72px;
+}
+
+.filter legend {
+    font-size: 16px;
+    line-height: 21px;
+
+    margin-top: 31px;
+    margin-bottom: 28px;
+}
+
+.filter ul {
+    font-weight: 400;
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+}
+
+.filter-option {
+    margin-bottom: 23px;
+    padding-left: 40px;
+}
+
+.filter-option label {
+    position: relative;
+  
+    display: block;
+  
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -42px;
+    top: 0;
+  
+    width: 23px;
+    height: 23px;
+  
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+    content: "";
+  
+    position: absolute;
+    top: 0px;
+    left: -42px;
+  
+    width: 23px;
+    height: 23px;
+    
+    background-image: url("../img/checkbox-on.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .filter-range {
     width: 330px;
-  
     color: #ffffff;
     text-transform: uppercase;
-  }
+
+    padding-left: 348px;
+    padding-top: 31px;
+}
   
-  .filter-range-title {
+.filter-range-title {
     margin-bottom: 9px;
   
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
-  }
+}
   
-  .price-controls {
+.price-controls {
     position: relative;
     
     height: 36px;
@@ -603,9 +672,9 @@ input[type="radio"].visually-hidden {
   
     border: 2px solid #ffffff;
     border-radius: 2px;
-  }
+}
   
-  .price-controls::after {
+.price-controls::after {
     content: "";
     position: absolute;
     top: 50%;
@@ -616,9 +685,9 @@ input[type="radio"].visually-hidden {
   
     background: #ffffff;
     transform: translate(-50%, -50%);
-  }
+}
   
-  .price-controls label {
+.price-controls label {
     display: inline-block;
   
     font-size: 14px;
@@ -626,15 +695,15 @@ input[type="radio"].visually-hidden {
     vertical-align: top;
   
     cursor: pointer;
-  }
+}
   
-  .price-controls .min-price,
-  .price-controls .max-price {
+.price-controls .min-price,
+.price-controls .max-price {
     width: 90px;
     padding-left: 65px;
-  }
+}
   
-  .price-controls input {
+.price-controls input {
     width: 50px;
     margin: 0;
   
@@ -643,28 +712,28 @@ input[type="radio"].visually-hidden {
   
     background: none;
     border: none;
-  }
+}
   
-  .range-controls {
+.range-controls {
     position: relative;
   
     margin-bottom: 32px;
-  }
+}
   
-  .range-controls .scale {
+.range-controls .scale {
     height: 2px;
   
     background: rgba(255, 255, 255, 0.3);
-  }
+}
   
-  .range-controls .bar {
+.range-controls .bar {
     width: 80%;
     height: 2px;
   
     background: #ffffff;
-  }
+}
   
-  .range-toggle {
+.range-toggle {
     position: absolute;
     top: -9px;
   
@@ -676,21 +745,21 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
-  }
+}
   
-  .range-toggle:hover {
+.range-toggle:hover {
     background: #1c4f80;
-  }
+}
   
-  .range-toggle-min {
+.range-toggle-min {
     left: 0;
-  }
+}
   
-  .range-toggle-max {
+.range-toggle-max {
     left: 80%;
-  }
+}
   
-  .btn-transparent {
+.btn-transparent {
     display: block;
     margin: 0 auto;
     padding: 6px 35px;
@@ -704,10 +773,87 @@ input[type="radio"].visually-hidden {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
-  }
+}
   
-  .btn-transparent:hover {
+.btn-transparent:hover {
     color: #000000;
   
     background: #ffffff;
-  }
+}
+
+.sorting {
+    width: 1200px;
+    background-color: #ffffff;
+
+    margin-left: 40px;
+    display: flex;
+}
+
+.sorting-left {
+    font-size: 21px;
+    line-height: 26px;
+
+    margin-left: 72px;
+    margin-top: 31px;
+    padding-bottom: 14px;
+}
+
+.sorting-center {
+    width: 353px;
+    font-size: 12px;
+    line-height: 18px;
+    list-style: none;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    margin-top: 41px;
+    margin-left: 49px;
+    justify-content: space-between;
+}
+
+.sorting-center a {
+    color: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-center a:hover {
+    color: #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.sorting-center a:active {
+    color: #000000;
+    border-bottom: none;
+}
+
+.sorting-center-active a {
+    color: #81b3d2;
+    border: none;
+}
+
+.sorting-right {
+    width: 34px;
+    margin-left: 504px;
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow {
+    fill: #cacaca;
+}
+
+.arrow:hover {
+    fill: #000000;
+}
+
+.arrow:active {
+    fill: #81b3d2;
+}
+
+.arrow-active {
+    fill: #81b3d2;
+}

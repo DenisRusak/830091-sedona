@@ -23,30 +23,85 @@
 
       <h1 class="visually-hidden">Гостиницы</h1>
       
-      <section class="filter">
-        <div class="filter-block">
-          <form action="" method="GET">
-            <div></div>
-            <div></div>
+      <section class="background-picture">
+        <form class="filter" action="" method="GET">
+
+          <!--Инфраструктура-->
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" 
+                type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" 
+                type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" 
+                type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!--Тип жилья-->
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" 
+                type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" 
+                type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" 
+                type="checkbox" name="apartments" id="apartments" checked>
+                <label for="apartments">Аппартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
 
             <!--Правый фильтр-->
-            <div class="filter-range">
-              <div class="filter-range-title">Стоимость в сутки (р):</div>
-              <div class="price-controls">
-                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-              </div>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
-              </div>
-              <button class="btn-transparent" type="submit">Показать</button>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
 
-          </form>
+        </form>
+      </section>
+
+      <!--Сортировка-->
+      <section class="sorting">
+        <p class="sorting-left">Найдено: 3</p>
+        <ul class="sorting-center">
+          <li>сортировка:</li>
+          <li class="sorting-center-active"><a href="#">по цене</a></li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по рейтингу</a></li>
+        </ul>
+        <div class="sorting-right">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z" class="arrow"/></svg></a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11" class="arrow arrow-active"/></svg></a>
         </div>
       </section>
 
