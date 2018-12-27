@@ -70,19 +70,40 @@ a {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 55px;
 }
 
 .search p {
     font-weight: normal;
     text-align: center;
     color: #333333;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+}
+
+.search a {
+    width: 568px;
+    font-size: 21px;
+    line-height: 26px;
+    background-color: #766357;
+    color: #ffffff;
+
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
+    padding-bottom: 33px;
+    margin-top: 52px;
 }
 
 .hotel-search {
     background-color: #ffffff;
     position: absolute;
+    width: 568px;
     left: 50%;
-    top: 273%;
+    top: 300%;
     transform: translateX(-50%);
 }
 
@@ -95,28 +116,26 @@ a {
     background-color: #766357;
 }
 
-.find-hotel a:hover,
+.search a:hover,
 .button-reservation:hover {
     background-color: #604e43;
 }
 
-.find-hotel a:active,
+.search a:active,
 .button-reservation:active {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #503e33;
 }
 
-.block-search {
-    line-height: 26px;
-    text-align: left;
-}
-
-.block-search-item input {
+.container-input input {
     font: inherit;
 
     background-color: #f2f2f2;
     border: none;
+    width: 316px;
+    height: 38px;
+    padding-left: 13px;
 }
 
 .block-search-item input:hover {
@@ -133,14 +152,52 @@ a {
 
     background-color: #f2f2f2;
     border: none;
+    height: 40px;
+}
+
+.button svg {
+    padding-top: 5px;
+}
+
+.block-search-third-line {
+    display: flex;
+    width: 568px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+.adults-label {
+    padding-top: 8px;
+    padding-right: 41px;
+}
+
+.child-label {
+    padding-top: 8px;
+    padding-right: 27px;
+    padding-left: 53px;
+}
+
+.small-container-input input {
+    font: inherit;
+    width: 24px;
+    height: 38px;
+    background-color: #f2f2f2;
+    border: none;
+    padding-left: 16px;
 }
 
 .button-find {
     font: inherit;
+    width: 458px;
     font-size: 21px;
     line-height: 26px;
     text-align: center;
     color: #ffffff;
+    padding-top: 18px;
+    padding-bottom: 22px;
+    margin-top: 54px;
+    margin-bottom: 55px;
+    text-transform: uppercase;
 
     background-color: #81b3d2;
     border: none;
@@ -303,31 +360,20 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
-.block-search-first-line {
+.block-search {
     display: flex;
     width: 568px;
+    padding-top: 55px;
     justify-content: center;
 }
 
-.block-search-second-line {
-    display: flex;
-    width: 568px;
-    justify-content: center;
+.second-line {
+    padding-top: 29px;
 }
 
-.block-search-third-line {
-    display: flex;
-    justify-content: center;
-}
-
-.button-symbol {
-    width: 38px;
-    height: 38px;
-}
-
-.inlet {
-    width: 38px;
-    height: 38px;
+.block-search label {
+    padding-top: 8px;
+    padding-right: 21px;
 }
 
 .footer {
