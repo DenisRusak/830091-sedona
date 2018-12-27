@@ -103,7 +103,7 @@ a {
     position: absolute;
     width: 568px;
     left: 50%;
-    top: 300%;
+    top: 78%;
     transform: translateX(-50%);
 }
 
@@ -294,10 +294,12 @@ a {
 /*стили сетки*/
 
 .wrapper {
+    position: relative;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     background-color: #ffffff;
+    box-shadow: 0 -2px 15px 2px #dbdbdb;
 }
 
 .nav {
@@ -377,11 +379,15 @@ input[type="radio"].visually-hidden {
 }
 
 .footer {
-    background-color: rgba(255,255,255,0.9) ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.9);
     padding-top: 34px;
     padding-top: 34px;
     padding-left: 40px;
     padding-right: 40px;
+    box-sizing: border-box;
 }
 
 .footer-container {
@@ -915,6 +921,6 @@ input[type="radio"].visually-hidden {
 
 .map {
     width: 1200px;
-    height: 475px;
+    height: 594px;
     background-image: url(../img/map.jpg); 
 }
