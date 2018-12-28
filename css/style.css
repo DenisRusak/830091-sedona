@@ -390,6 +390,11 @@ input[type="radio"].visually-hidden {
     box-sizing: border-box;
 }
 
+.footer-inner {
+    position: static;
+    bottom: auto;
+}
+
 .footer-container {
     display: flex;
     align-items: center;
