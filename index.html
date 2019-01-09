@@ -48,17 +48,17 @@
         <!--Вторая строка-->
         <div class="reason-picture">
           <div class="life">
-            <img src="img/home.svg" alt="Жилье">
+            <img src="img/home.svg" alt="Жилье" width="75" height="72">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="food">
-            <img src="img/food.svg" alt="Еда">
+            <img src="img/food.svg" alt="Еда" width="75" height="72">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="presents">
-            <img src="img/presents.svg" alt="Сувениры">
+            <img src="img/presents.svg" alt="Сувениры" width="75" height="72">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </div>
@@ -100,7 +100,7 @@
         
         <a href="form-hotels.html">Поиск гостинницы в Седоне</a>
 
-        <form class="hotel-search" action="" method="post">
+        <form class="hotel-search" action="hotels.html" method="post">
 
           <div class="block-search first-line">
             <label for="date-income">Дата заезда:</label>
@@ -108,7 +108,7 @@
               <input id="date-income" type="text" name="date-income" value="24 апреля 2017">
             </div>
             <button class="button" type="button">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" id="Layer_1"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" class="calendar">
               <g id="calendar_1_">
                 <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
@@ -129,8 +129,8 @@
                 <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
               </g>
               </svg>
-              <p class="visually-hidden">Выбрать дату</p>
             </button>
+            <p class="visually-hidden">Выбрать дату</p>
           </div>
 
           <div class="block-search second-line">
@@ -139,9 +139,9 @@
               <input id="date-outcome" type="text" name="date-outcome" value="4 июля 2017">
             </div>
             <button class="button" type="button">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="21px" height="22px" viewBox="0 0 21 22" enable-background="new 0 0 21 22" xml:space="preserve" class="calendar">
-              <g id="calendar_1_">
+              <g id="calendar_2_">
                 <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
                   c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
                   c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
@@ -160,35 +160,31 @@
                 <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
               </g>
               </svg>
-              <p class="visually-hidden">Выбрать дату</p>
             </button>
+            <p class="visually-hidden">Выбрать дату</p>
           </div>
 
           <div class="block-search-third-line">
 
             <!--Взрослые-->
             <label class="adults-label" for="adults">Взрослые:</label>
-            <button class="button-symbol minus" type="button">
-              <p class="visually-hidden">Убрать</p>
-            </button>
+            <button class="button-symbol minus" type="button"></button>
+            <p class="visually-hidden">Убрать</p>
             <div class="small-container-input">
               <input id="adults" type="text" name="adults" value="2">
             </div>
-            <button class="button-symbol plus" type="button">
-              <p class="visually-hidden">Добавить</p>
-            </button>
+            <button class="button-symbol plus" type="button"></button>
+            <p class="visually-hidden">Добавить</p>
 
             <!--Дети-->
             <label class="child-label" for="child">Дети:</label>
-            <button class="button-symbol minus" type="button">
-              <p class="visually-hidden">Убрать</p>
-            </button>
+            <button class="button-symbol minus" type="button"></button>
+            <p class="visually-hidden">Убрать</p>
             <div class="small-container-input">
               <input id="child" type="text" name="child" value="0">
             </div>
-            <button class="button-symbol plus" type="button">
-                <p class="visually-hidden">Добавить</p>
-              </button>
+            <button class="button-symbol plus" type="button"></button>
+            <p class="visually-hidden">Добавить</p>
           </div>
 
           <button class="button-find" type="submit">Найти</button>
@@ -218,7 +214,7 @@
             </a></li>
           </ul>
           <p class="footer-website">website by</p>
-          <a class="footer-htmllogo" href="htmlacademy.ru">
+          <a class="footer-htmllogo" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
           </a>
         </div>
