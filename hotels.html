@@ -10,7 +10,7 @@
     <section class="wrapper">
       
       <header class="header">
-        <a href="index.html" class="indexlogo"><img src="img/index-logo.png" width="140" height="71" alt="Логотип Седона"></a>
+        <a href="index.html" class="index-logo"><img src="img/index-logo.png" width="140" height="71" alt="Логотип Седона"></a>
         <ul class="nav">
           <li class="information"><a href="info.html">Информация</a></li>
           <li class="photo"><a href="photo.html">Фото и видео</a></li>
@@ -29,17 +29,17 @@
             <legend>Инфраструктура:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" 
+                <input class="visually-hidden filter-input-checkbox" 
                 type="checkbox" name="pool" id="pool" checked>
                 <label for="pool">Бассейн</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" 
+                <input class="visually-hidden filter-input-checkbox" 
                 type="checkbox" name="parking" id="parking">
                 <label for="parking">Парковка</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" 
+                <input class="visually-hidden filter-input-checkbox" 
                 type="checkbox" name="wi-fi" id="wi-fi">
                 <label for="wi-fi">Wi-fi</label>
               </li>
@@ -51,19 +51,19 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" 
+                <input class="visually-hidden filter-input-checkbox" 
                 type="checkbox" name="hotel" id="hotel" checked>
                 <label for="hotel">Гостиница</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" 
+                <input class="visually-hidden filter-input-checkbox" 
                 type="checkbox" name="motel" id="motel" checked>
                 <label for="motel">Мотель</label>
               </li>
               <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" 
+                <input class="visually-hidden filter-input-checkbox" 
                 type="checkbox" name="apartments" id="apartments" checked>
-                <label for="apartments">Аппартаменты</label>
+                <label for="apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
@@ -94,8 +94,8 @@
         <ul class="sorting-center">
           <li>сортировка:</li>
           <li class="sorting-center-active"><a href="#">по цене</a></li>
-          <li><a href="#">по типу</a></li>
-          <li><a href="#">по рейтингу</a></li>
+          <li class="on-type"><a href="#">по типу</a></li>
+          <li class="on-rating"><a href="#">по рейтингу</a></li>
         </ul>
         <div class="sorting-right">
           <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z" class="arrow"/></svg></a>
@@ -118,7 +118,7 @@
                 <p class="type-hotel">Гостиница</p>
                 <p>от 4000 р.</p>
               </div>
-              <div>
+              <div class="catalog-buttons">
                 <a class="button-more" href="#">Подробнее</a>
                 <a class="button-reservation" href="#">Забронировать</a>
               </div>
@@ -147,7 +147,7 @@
                 <p class="type-hotel">мотель</p>
                 <p>от 3000 р.</p>
               </div>
-              <div>
+              <div class="catalog-buttons">
                 <a class="button-more" href="#">Подробнее</a>
                 <a class="button-reservation" href="#">Забронировать</a>
               </div>
@@ -172,10 +172,10 @@
             <div class="left-info">
               <h3 class="name-hotel"><a href="#">villas at poco diablo</a></h3>
               <div class="name-price">
-                <p class="type-hotel">Аппартаменты</p>
+                <p class="type-hotel">Апартаменты</p>
                 <p>от 2000 р.</p>
               </div>
-              <div>
+              <div class="catalog-buttons">
                 <a class="button-more" href="#">Подробнее</a>
                 <a class="button-reservation" href="#">Забронировать</a>
               </div>
@@ -190,7 +190,6 @@
               <p class="rating">Рейтинг: 9,2</p>
             </div>
           </li>
-
         </ul>
       </section>
 
@@ -211,10 +210,12 @@
               <p class="visually-hidden">Ютуб</p>
             </a></li>
           </ul>
-          <p class="footer-website">website by</p>
-          <a class="footer-htmllogo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <div class="footer-copyright">
+            <p class="footer-website">website by</p>
+            <a class="footer-htmllogo" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
-          </a>
+            </a>
+          </div>
         </div>
       </footer>
 

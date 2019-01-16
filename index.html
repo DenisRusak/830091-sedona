@@ -10,7 +10,7 @@
     <section class="wrapper">
 
       <header class="header">
-        <a href="index.html" class="indexlogo"><img src="img/index-logo.png" width="140" height="71" alt="Логотип Седона"></a>
+        <img class="index-logo" src="img/index-logo.png" width="140" height="71" alt="Логотип Седона">
         <ul class="nav">
           <li class="information"><a href="info.html">Информация</a></li>
           <li class="photo"><a href="photo.html">Фото и видео</a></li>
@@ -26,9 +26,8 @@
         </div>
       </div>
 
-
       <div class="description">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </div>
     
@@ -36,10 +35,10 @@
       <section class="reasons">
         <!--Первая строка-->
         <div class="reason-row-up">
-          <div class="items-reason-row">
+          <div class="items-reason-row-up">
             <h3>Настоящий городок</h3>
-            <span>№1</span>
-            <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
+            <span>— №1 —</span>
+            <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <span class="true-town">
             <img src="img/true-town.jpg" width="800" height="256" alt="Настоящий гороок">
@@ -49,7 +48,7 @@
         <div class="reason-picture">
           <div class="life">
             <img src="img/home.svg" alt="Жилье" width="75" height="72">
-            <h3>Жилье</h3>
+            <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </div>
           <div class="food">
@@ -58,7 +57,7 @@
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
           <div class="presents">
-            <img src="img/presents.svg" alt="Сувениры" width="75" height="72">
+            <img src="img/presents.svg" alt="Сувениры" width="64" height="76">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </div>
@@ -68,9 +67,9 @@
           <span class="devil-bridge">
             <img src="img/devil-bridge.jpg" width="800" height="256" alt="Настоящий гороок">
           </span>
-          <div class="items-reason-row">
+          <div class="items-reason-row-down">
             <h3>Там есть<br>мост дьявола</h3>
-            <span>№2</span>
+            <span>— №2 —</span>
             <p>Да, по нему можно пройти! если конечно вы осмелитесь</p>
           </div>
         </div>
@@ -78,17 +77,17 @@
         <div class="reason-numbers">
           <div class="small-area">
             <h3>Небольшая площадь</h3>
-            <span>№3</span>
+            <span>— №3 —</span>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="nice-road">
             <h3>Красивая дорога</h3>
-            <span>№4</span>
+            <span>— №4 —</span>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
           <div class="few-tourists">
             <h3>Мало туристов</h3>
-            <span>№5</span>
+            <span>— №5 —</span>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </div>
@@ -96,15 +95,15 @@
 
       <div class="search">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинниц в Седоне</p>
+        <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         
-        <a href="form-hotels.html">Поиск гостинницы в Седоне</a>
+        <a href="form-hotels.html">Поиск гостиницы в Седоне</a>
 
         <form class="hotel-search" action="hotels.html" method="post">
 
           <div class="block-search first-line">
             <label for="date-income">Дата заезда:</label>
-            <div class="container-input">
+            <div class="container-input input-first">
               <input id="date-income" type="text" name="date-income" value="24 апреля 2017">
             </div>
             <button class="button" type="button">
@@ -135,7 +134,7 @@
 
           <div class="block-search second-line">
             <label for="date-outcome">Дата выезда:</label>
-            <div class="container-input">
+            <div class="container-input input-second">
               <input id="date-outcome" type="text" name="date-outcome" value="4 июля 2017">
             </div>
             <button class="button" type="button">
@@ -168,7 +167,7 @@
 
             <!--Взрослые-->
             <label class="adults-label" for="adults">Взрослые:</label>
-            <button class="button-symbol minus" type="button"></button>
+            <button class="button-symbol minus minus-left" type="button"></button>
             <p class="visually-hidden">Убрать</p>
             <div class="small-container-input">
               <input id="adults" type="text" name="adults" value="2">
@@ -178,7 +177,7 @@
 
             <!--Дети-->
             <label class="child-label" for="child">Дети:</label>
-            <button class="button-symbol minus" type="button"></button>
+            <button class="button-symbol minus minus-right" type="button"></button>
             <p class="visually-hidden">Убрать</p>
             <div class="small-container-input">
               <input id="child" type="text" name="child" value="0">
@@ -213,10 +212,12 @@
               <p class="visually-hidden">Ютуб</p>
             </a></li>
           </ul>
-          <p class="footer-website">website by</p>
-          <a class="footer-htmllogo" href="https://htmlacademy.ru/intensive/htmlcss">
+          <div class="footer-copyright">
+            <p class="footer-website">website by</p>
+            <a class="footer-htmllogo" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
-          </a>
+            </a>
+          </div>
         </div>
       </footer>
     </section>
